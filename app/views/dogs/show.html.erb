@@ -1,0 +1,17 @@
+Dog Show Page
+<br/>
+<br/>
+<ul>
+ <%= @dog.name %>
+<br/>
+<%= @dog.breed %>
+<br/>
+<%= @dog.age %>
+</ul>
+<br/>
+<br/>
+
+Owners:
+<% @dog.employees.each do |employee| %>
+<li><%= link_to("#{employee.first_name} #{employee.last_name}", employee_path(employee)) %></li>
+<% end %>
