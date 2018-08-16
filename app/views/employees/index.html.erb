@@ -1,0 +1,6 @@
+Employee Index Page
+<br/>
+<br/>
+<% @employees.all.each do |employee| %>
+<li><%= link_to(employee.first_name, employee_path(employee))  %></li>
+<% end %>

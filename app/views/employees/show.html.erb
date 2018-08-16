@@ -1,0 +1,13 @@
+Employee Show Page
+<ul>
+
+<li><%= "#{@employee.first_name} #{@employee.last_name}" %></li>
+<li><%= @employee.alias %></li>
+<li><%= @employee.title %></li>
+<li><%= @employee.office %></li>
+<li><%= @employee.alias %></li>
+<li>Dog: <%= link_to(@employee.dog.name, dog_path(@employee.dog)) %></li>
+
+</ul>
+
+<img src="<%= @employee.img_url %>" alt=" face" height="200" width="200">
