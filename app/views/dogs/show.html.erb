@@ -1,0 +1,10 @@
+show the dogs! <br>
+this is dogs.names! pag welcym
+ok gr8
+
+<h1> NAME: <%= @dog.name %></h1><hr>
+AGE: <%= @dog.age %><br>
+BREED: <%= @dog.breed %>
+EMPLOYEES: <% @dog.employees.each do |employee| %>
+<li><%= link_to employee.name, employee_path(employee) %></li>
+<% end %>
