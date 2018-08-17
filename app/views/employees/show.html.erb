@@ -1,0 +1,18 @@
+<h1><%= @employee.first_name + @employee.last_name%></h1>
+
+<%= @employee.alias %>
+<br />
+<%= @employee.title %>
+<br />
+<%= @employee.office %>
+<br />
+<%= @employee.img_url %>
+<br />
+<%= @employee.dog.name %>
+<br />
+<%= image_tag("#{@employee.img_url}") %>
+<br />
+<br />
+<%= form_tag employee_path(@employee.id), method: "delete" do %>
+  <%= submit_tag "Delete employee" %>
+<% end %>
