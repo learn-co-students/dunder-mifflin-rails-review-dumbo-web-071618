@@ -1,0 +1,11 @@
+<h1><%= @dog.name %><h1>
+<h1><%= @dog.breed %><h1>
+<h1><%= @dog.age %><h1>
+<% @dog.employees.each do |e| %>
+<%= link_to e.first_name + e.last_name, employee_path(e) %>
+<% end %>
+<br>
+<br>
+<%= form_tag dog_path(@dog.id), method: "delete" do %>
+  <%= submit_tag "Delete dog" %>
+<% end %>
