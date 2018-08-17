@@ -1,0 +1,11 @@
+show the employees! <br>
+this is employees.names! pag welcym
+ok gr8
+
+<h1> NAME: <%= @employee.name %></h1><hr>
+ALIAS: <%= @employee.alias %><br>
+TITLE: <%= @employee.title %><br>
+OFFICE: <%= @employee.office %><br>
+PHOTO: <img src="<%=@employee.img_url %>">
+DOG: <%= link_to @employee.dog.name, dog_path(@employee.dog) %>
+<img src="#{}"
